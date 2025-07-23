@@ -14,6 +14,9 @@
 .flex{
     display: flex;
 }
+.grid{
+    display: grid;
+}
 .txt-clr-b{
     color: rgba(0, 0, 0, 1) ;
 }
@@ -62,6 +65,55 @@ nav ul li a{
 .banner-img{
     width: 100%;
 }
+/* our plant style */
+.our-plant{
+    margin-top: 120px;
+}
+.our-plant-container{
+    max-width: 888px;
+    margin: 0 auto;
+    text-align: center;
+}
+.our-plant-title{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.our-plant-des{
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+.card{
+    box-shadow: 0 4px 4px #000000;
+    overflow: hidden;
+    width: 100%;
+}
+.card-body{
+    
+    text-align: center;
+
+}
+.card-img{
+    width: 100%;
+}
+.our-plant-cards{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+.btn-primary{
+    width: 350px;
+    background:rgba(233, 90, 8, 1);
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 19px 80px;
+
+}
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
@@ -72,11 +124,17 @@ nav ul li a{
     }
     .banner{
         flex-direction: column-reverse;
-        margin-top: 150px;
+        margin-top: 200px;
+        
     }
     .banner-contant{
         width: 520px;
     }
+    .our-plant-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    
     
 }
 
