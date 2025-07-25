@@ -192,13 +192,33 @@ nav ul li a{
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 1.25rem;
     color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.deal-wrt > .gap{
+    margin-right: 20px;
+}
+
+.shop{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 } 
+.shop a{
+    color: white;
+}
+
  /*join style  */
 
 .bg-img{
@@ -234,6 +254,41 @@ nav ul li a{
     border: none;
     width: 186px;
 }  
+/* footer style */
+.footer-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.footer-sec{
+    width: 400px;
+    
+}
+.foot-des{
+    font-weight: 400;
+    font-size: 20px;
+}
+.column{
+    margin-left: 180px;
+}
+.social-icons{
+    margin-left:180px ;
+}
+.col-list li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.col-list li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #6B7280;
+}
+.social-icons img{
+    margin-right: 10px;
+}
+
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
@@ -254,12 +309,19 @@ nav ul li a{
         flex-direction: column;
         margin-bottom: 120px;
     }
+    .lists{
+        width: 450px;
+    }
     .banner{
         flex-direction: column-reverse;
         margin-top: 300px;  
     }
     .our-plant-cards{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .btn-primary{
+    padding-left: 0px;
+    
     }
     .deals-card{
         display: none;
@@ -276,6 +338,18 @@ nav ul li a{
         width: 80px;
         padding: 10px;
     }
+    .footer-container, .footer-links{
+        flex-direction: column;
+    }
+    .column{
+        margin-left: 0px;
+    }
+    .social-icons{
+        margin-left: 5px;
+    }
+    .footer-sec{
+        width: 300px;
+    } 
 
 }
 
