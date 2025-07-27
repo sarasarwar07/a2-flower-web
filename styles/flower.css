@@ -324,8 +324,12 @@ nav ul li a{
     
     }
     .deals-card{
-        /* display: none; */
+        
         flex-direction: column;
+    }
+    .deal-wrt{
+        font-weight: 400;
+        font-size: 1rem;
     }
     .join-title{
         font-weight: 600;
